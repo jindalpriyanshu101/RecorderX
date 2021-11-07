@@ -8,7 +8,7 @@ No matter what your PC specs are, you can use this recorder to get high quality 
 3. That's it, nothing else :D
 
 ## How to operate?
-1. On running RecorderX, you'll be asked to enter output file name along with format, few filename examples below:
+1. On running RecorderX, powershell/cmd will be opened and you'll be asked to enter output file name along with format(it will take a few sec for the first time.), few filename examples below:
 ```
 output.mp4
 output.mkv
