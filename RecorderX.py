@@ -11,7 +11,7 @@ file_name = input("enter output name with format: ")
 print("Starting RecorderX, press Q on recorder screen to stop recording....")
 time.sleep(3)
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-output = cv2.VideoWriter(file_name, fourcc, 20.0, (width, height)) 
+output = cv2.VideoWriter(file_name, fourcc, 8.5, (width, height))
 #fps = 8.5 is stable output; 20.0 = 3x speed
 #higher the fps = faster the video speed
 
