@@ -35,5 +35,4 @@ If you wish to contribute in this project, just open an issue stating you wanna 
 ## RecorderX v1.1
 * Now users can chose their QUIT key;
 * Error handling added;
-* Code open sourced;
 * RecorderX.exe improved.
