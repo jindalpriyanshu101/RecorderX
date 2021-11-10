@@ -1,0 +1,5 @@
+# opencv requires python 3.6 to 3.9
+
+pip install opencv-python
+pip install numpy
+pip install pywin32
