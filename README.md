@@ -5,7 +5,7 @@ No matter what your PC specs are, you can use this recorder to get high quality 
 `NOTE: code idea taken from Programming Hero , code being developed by Priyanshu`
 ## Limitations
 1. Can't record your system voice currently.
-2. Doesn't support games recording currently. (for some computers)
+2. ~~Doesn't support games recording currently. (for some computers)~~ Added Support in `v1.2`
 3. That's it, nothing else :D
 
 ## How to operate?
@@ -24,15 +24,3 @@ Your output video file will be saved in the same folder where you executed Recor
 
 ## How to contribute in this project?
 If you wish to contribute in this project, just open an issue stating you wanna contribute along with letting me know with what stuff you can help and contribute :D OR you can just fork this repo and commit your changes.
-
-------------------------------------------------------------------------------------------------------------------------------------------------
-# ChangeLog
-## RecorderX v1.0
-* Can record your screen.
-* Quit only when 'q' is pressed.
-* Code hidden.
-
-## RecorderX v1.1
-* Now users can chose their QUIT key;
-* Error handling added;
-* RecorderX.exe improved.
