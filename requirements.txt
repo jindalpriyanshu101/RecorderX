@@ -1,5 +1,8 @@
-# opencv requires python 3.6 to 3.9
+# Dependencies for RecorderX
 
 pip install opencv-python
 pip install numpy
 pip install pywin32
+pip install customtkinter
+pip install pillow
+
