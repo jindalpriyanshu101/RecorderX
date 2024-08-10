@@ -71,3 +71,10 @@ Contributions to RecorderX are welcome! Here’s how you can contribute:
 ## Acknowledgments
 - **Programming Hero:** Inspiration for the initial concept of the screen recording functionality.
 - **OpenCV, CustomTkinter, PIL:** Key libraries that made the development of RecorderX possible.
+
+<div>
+  <h2 align = "center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="35" height="35">Our Contributors</h2>
+  <div align = "center">
+ <h3>Thank you for contributing to this repository</h3>
+
+![Contributors](https://contrib.rocks/image?repo=jindalpriyanshu101/RecorderX)
