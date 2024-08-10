@@ -34,6 +34,9 @@ def setup_ui():
     button_color = "#1f6aa5"
     text_color = "#f0f0f0"
 
+    # Initialize customtkinter
+    ctk.set_appearance_mode("dark")
+    ctk.set_default_color_theme("blue")
     # File name entry
     ctk.CTkLabel(app, text="Output file name (with extension):", font=font_small, text_color=text_color).pack(pady=padding)
     file_name_entry = ctk.CTkEntry(app, width=300)
