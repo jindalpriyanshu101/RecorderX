@@ -90,7 +90,7 @@ def start_recording():
     stop_button.configure(state=ctk.NORMAL)
     status_label.configure(text="Recording...", text_color="white")
 
-    def recorder_thread():
+    def RecorderX():
         """Thread function to capture and record the screen."""
         prev_time = time.time()
         while recording:
@@ -126,7 +126,7 @@ def start_recording():
         record_button.configure(state=ctk.NORMAL)
         stop_button.configure(state=ctk.DISABLED)
 
-    threading.Thread(target=recorder_thread).start()
+    threading.Thread(target=RecorderX).start()
 
 def stop_recording():
     """Stops the screen recording."""
