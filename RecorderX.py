@@ -10,15 +10,15 @@ from win11toast import toast # for windows pop-up notifications
 def print_intro():
     """Prints the introductory message for the application."""
     print('''\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-$                                                     $
-$                                                     $
-$                    RecorderX                        $
-$                                                     $
-$           Created By: Priyanshu Jindal              $
-$           Github ID: jindalpriyanshu101             $
-$                                                     $
-$                                                     $
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n''')
+    $                                                     $
+    $                                                     $
+    $                    RecorderX                        $
+    $                                                     $
+    $           Created By: Priyanshu Jindal              $
+    $           Github ID: jindalpriyanshu101             $
+    $                                                     $
+    $                                                     $
+    $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n''')
 
 def setup_ui():
     """Sets up the user interface of the application."""
