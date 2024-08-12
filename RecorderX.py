@@ -1,10 +1,11 @@
-import customtkinter as ctk
-import numpy as np
 import cv2
-from PIL import ImageGrab
-from win32api import GetSystemMetrics
-import threading
 import time
+import threading
+import numpy as np
+from PIL import ImageGrab
+import customtkinter as ctk
+from win32api import GetSystemMetrics
+from win11toast import toast # for windows pop-up notifications
 
 def print_intro():
     """Prints the introductory message for the application."""
@@ -70,6 +71,7 @@ def start_recording():
     file_name = file_name_entry.get().strip()
     if not file_name:
         status_label.configure(text="Please enter a valid file name.", text_color="red")
+        toast("RecorderX", "Error: Please enter a valid file name.", duration="short5")
         return
 
     key = custom_key_entry.get().strip() or 'q'  # Default to 'q' if no key is entered
@@ -83,12 +85,14 @@ def start_recording():
         output = cv2.VideoWriter(file_name, fourcc, 20.0, resolution)  # Adjusted frame rate to 20 FPS
     except Exception as e:
         status_label.configure(text=f"Error: {str(e)}", text_color="red")
+        toast("RecorderX", f"Error: {str(e)}", duration="short5")
         return
 
     recording = True
     record_button.configure(state=ctk.DISABLED)
     stop_button.configure(state=ctk.NORMAL)
-    status_label.configure(text="Recording...", text_color="white")
+    status_label.configure(text="Recording Started..." ,text_color="green")
+    toast("Recording Status:", "Preparing to start recording...", app_id="RecorderX", duration="short")
 
     def RecorderX():
         """Thread function to capture and record the screen."""
@@ -118,13 +122,15 @@ def start_recording():
 
             except Exception as e:
                 status_label.configure(text=f"Error: {str(e)}", text_color="red")
+                toast("An Error Occured", f"Error Summery: \n{str(e)}", app_id="RecorderX", duration="short")
                 break
 
         cv2.destroyAllWindows()
         output.release()
-        status_label.configure(text="Recording stopped", text_color="white")
+        status_label.configure(text="Recording stopped", text_color="yellow")
         record_button.configure(state=ctk.NORMAL)
         stop_button.configure(state=ctk.DISABLED)
+        toast("Recording stopped", f"Recording is saved to file: ** {file_name} **", app_id="RecorderX", duration="short")
 
     threading.Thread(target=RecorderX).start()
 

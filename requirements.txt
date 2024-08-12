@@ -5,4 +5,4 @@ pip install numpy
 pip install pywin32
 pip install customtkinter
 pip install pillow
-
+pip install win11toast
